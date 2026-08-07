@@ -7,6 +7,7 @@ menou-store が使用しているVRChat**ワールド**制作用のツール・�
 | パッケージID | 内容 |
 |---|---|
 | `com.menoustore.stagecameratrigger` | プレイヤーがトリガーColliderに入っている間だけ舞台カメラを有効化する省エネ監視カメラギミック(UdonSharp) |
+| `com.menoustore.particlerangetrigger` | プレイヤーがトリガーColliderに入っている間だけParticleSystemを再生する省エネギミック(UdonSharp) |
 
 必要なものだけ個別にインストールできます。
 
@@ -53,6 +54,12 @@ git push origin v1.0.1
 2. 舞台カメラのRenderTextureを表示するモニター付近に配置したColliderを `Is Trigger = ON` に
 3. `StageCameraTrigger` の `Target Camera` に対象の舞台カメラをアサイン
 4. カメラ本体の `Enabled` は最初からOFFにしておく(起動時は非表示、誰かがトリガーに入った時だけ有効化される)
+
+## 使い方(Particle Range Trigger)
+
+1. 演出したいエリアに空のGameObjectを作り、Box/Sphere ColliderをIs Trigger=ONで追加(範囲=そのColliderのSize)。`Prefabs/パーティクルコライダー.prefab` をベースにしてもよい
+2. `ParticleRangeTrigger` の `Target Particles` に対象のParticleSystemをドラッグ(複数登録可)
+3. 各ParticleSystem側の `Play On Awake` はOFFにしておく(起動時は非再生スタート)
 
 ## 注意
 

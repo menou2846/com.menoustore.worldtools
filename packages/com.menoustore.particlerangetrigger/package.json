@@ -1,0 +1,14 @@
+{
+  "name": "com.menoustore.particlerangetrigger",
+  "version": "1.0.0",
+  "displayName": "[menotool] Particle Range Trigger (Private)",
+  "description": "プレイヤーがトリガーColliderに入っている間だけ登録したParticleSystemを再生し、範囲外では停止してCPU/描画コストを省く省エネギミック(UdonSharp)",
+  "unity": "2022.3",
+  "author": {
+    "name": "menou-store",
+    "url": "https://github.com/menou2846"
+  },
+  "vpmDependencies": {
+    "com.vrchat.worlds": ">=3.5.0"
+  }
+}
