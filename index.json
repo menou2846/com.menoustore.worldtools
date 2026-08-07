@@ -20,7 +20,27 @@
             "com.vrchat.worlds": ">=3.5.0"
           },
           "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.stagecameratrigger-1.0.0.zip",
-          "zipSHA256": "22380638adc43a727b2e76c69506c387a484c40cafca87494d5c413927c9cf82"
+          "zipSHA256": "9081075f3bc05b38e2c96d1f5167f9f18ec5aea4be898a92d19ee7625fbeb26d"
+        }
+      }
+    },
+    "com.menoustore.particlerangetrigger": {
+      "versions": {
+        "1.0.0": {
+          "name": "com.menoustore.particlerangetrigger",
+          "version": "1.0.0",
+          "displayName": "[menotool] Particle Range Trigger (Private)",
+          "description": "プレイヤーがトリガーColliderに入っている間だけ登録したParticleSystemを再生し、範囲外では停止してCPU/描画コストを省く省エネギミック(UdonSharp)",
+          "unity": "2022.3",
+          "author": {
+            "name": "menou-store",
+            "url": "https://github.com/menou2846"
+          },
+          "vpmDependencies": {
+            "com.vrchat.worlds": ">=3.5.0"
+          },
+          "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.particlerangetrigger-1.0.0.zip",
+          "zipSHA256": "b90af4518fb88e9cdf8cd222aed1c31428a5efa36a77c1f8cc99c3ffc42c86fe"
         }
       }
     }
