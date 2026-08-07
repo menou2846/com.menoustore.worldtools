@@ -1,0 +1,28 @@
+{
+  "name": "menou-store Private VPM Listing",
+  "author": "menou-store",
+  "id": "dev.menou2846.com.menoustore.worldtools",
+  "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/index.json",
+  "packages": {
+    "com.menoustore.stagecameratrigger": {
+      "versions": {
+        "1.0.0": {
+          "name": "com.menoustore.stagecameratrigger",
+          "version": "1.0.0",
+          "displayName": "[menotool] Stage Camera Trigger (Private)",
+          "description": "プレイヤーがトリガーColliderに入っている間だけ舞台カメラを有効化し、RenderTexture描画コストを省く省エネ監視カメラギミック(UdonSharp)",
+          "unity": "2022.3",
+          "author": {
+            "name": "menou-store",
+            "url": "https://github.com/menou2846"
+          },
+          "vpmDependencies": {
+            "com.vrchat.worlds": ">=3.5.0"
+          },
+          "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.stagecameratrigger-1.0.0.zip",
+          "zipSHA256": "22380638adc43a727b2e76c69506c387a484c40cafca87494d5c413927c9cf82"
+        }
+      }
+    }
+  }
+}
