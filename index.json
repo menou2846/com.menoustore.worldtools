@@ -20,7 +20,7 @@
             "com.vrchat.worlds": ">=3.5.0"
           },
           "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.stagecameratrigger-1.0.0.zip",
-          "zipSHA256": "9081075f3bc05b38e2c96d1f5167f9f18ec5aea4be898a92d19ee7625fbeb26d"
+          "zipSHA256": "0e8b6aab172f5a9eac9978d06cc4991cdf0ddb780226e4fc8a7a694193c00ec5"
         }
       }
     },
@@ -40,7 +40,24 @@
             "com.vrchat.worlds": ">=3.5.0"
           },
           "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.particlerangetrigger-1.0.0.zip",
-          "zipSHA256": "b90af4518fb88e9cdf8cd222aed1c31428a5efa36a77c1f8cc99c3ffc42c86fe"
+          "zipSHA256": "ff47e45bb31b8148c45b4dc51a0c3dc7f2b01e4c557ef512309f8572f49a0b46"
+        }
+      }
+    },
+    "com.menoustore.mantislodbatch": {
+      "versions": {
+        "1.0.0": {
+          "name": "com.menoustore.mantislodbatch",
+          "version": "1.0.0",
+          "displayName": "[menotool] Mantis LOD Batch Generator (Private)",
+          "description": "選択したオブジェクト群に対してMantis LOD EditorのAPIを使いLOD1/LOD2メッシュとLODGroupを一括自動生成するエディタ拡張。要Mantis LOD Editor(別途購入・Assets配下にインポート済みであること)。",
+          "unity": "2022.3",
+          "author": {
+            "name": "menou-store",
+            "url": "https://github.com/menou2846"
+          },
+          "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.mantislodbatch-1.0.0.zip",
+          "zipSHA256": "7402bcc84fb5cfc02836f43bfa04f949ca88fb7b4c96e1d45f76fe6990715401"
         }
       }
     }
