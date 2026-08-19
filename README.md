@@ -8,6 +8,7 @@ menou-store が使用しているVRChat**ワールド**制作用のツール・�
 |---|---|
 | `com.menoustore.stagecameratrigger` | プレイヤーがトリガーColliderに入っている間だけ舞台カメラを有効化する省エネ監視カメラギミック(UdonSharp) |
 | `com.menoustore.particlerangetrigger` | プレイヤーがトリガーColliderに入っている間だけParticleSystemを再生する省エネギミック(UdonSharp) |
+| `com.menoustore.mantislodbatch` | Mantis LOD EditorのAPIを使いLOD1/LOD2メッシュとLODGroupを一括自動生成するエディタ拡張(要Mantis LOD Editor別途購入) |
 
 必要なものだけ個別にインストールできます。
 
@@ -60,6 +61,15 @@ git push origin v1.0.1
 1. 演出したいエリアに空のGameObjectを作り、Box/Sphere ColliderをIs Trigger=ONで追加(範囲=そのColliderのSize)。`Prefabs/パーティクルコライダー.prefab` をベースにしてもよい
 2. `ParticleRangeTrigger` の `Target Particles` に対象のParticleSystemをドラッグ(複数登録可)
 3. 各ParticleSystem側の `Play On Awake` はOFFにしておく(起動時は非再生スタート)
+
+## 使い方(Mantis LOD Batch Generator)
+
+**要件: Mantis LOD Editor(有償, Unity Asset Store)を別途購入し、対象プロジェクトの `Assets` 配下にインポートしておくこと。**このパッケージにはMantis LOD Editor本体は含まれません。
+
+1. Unityメニューの `Tools > 軽量化検証 > Mantis LODを一括生成` を開く
+2. Hierarchyで対象オブジェクトを選択(MeshRendererが無ければ子階層を自動探索)
+3. LOD1/LOD2の品質(%)と切替しきい値を設定し、「選択中のオブジェクトに生成」をクリック
+4. `Assets/GeneratedLODs/` に簡略化メッシュが生成され、対象オブジェクトに標準の `LODGroup` が設定される
 
 ## 注意
 

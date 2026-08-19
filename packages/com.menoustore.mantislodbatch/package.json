@@ -1,0 +1,11 @@
+{
+  "name": "com.menoustore.mantislodbatch",
+  "version": "1.0.0",
+  "displayName": "[menotool] Mantis LOD Batch Generator (Private)",
+  "description": "選択したオブジェクト群に対してMantis LOD EditorのAPIを使いLOD1/LOD2メッシュとLODGroupを一括自動生成するエディタ拡張。要Mantis LOD Editor(別途購入・Assets配下にインポート済みであること)。",
+  "unity": "2022.3",
+  "author": {
+    "name": "menou-store",
+    "url": "https://github.com/menou2846"
+  }
+}
