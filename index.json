@@ -21,6 +21,22 @@
           },
           "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.stagecameratrigger-1.0.0.zip",
           "zipSHA256": "0e8b6aab172f5a9eac9978d06cc4991cdf0ddb780226e4fc8a7a694193c00ec5"
+        },
+        "1.0.1": {
+          "name": "com.menoustore.stagecameratrigger",
+          "version": "1.0.1",
+          "displayName": "[worldtools] Stage Camera Trigger",
+          "description": "プレイヤーがトリガーColliderに入っている間だけ舞台カメラを有効化し、RenderTexture描画コストを省く省エネ監視カメラギミック(UdonSharp)",
+          "unity": "2022.3",
+          "author": {
+            "name": "menou-store",
+            "url": "https://github.com/menou2846"
+          },
+          "vpmDependencies": {
+            "com.vrchat.worlds": ">=3.5.0"
+          },
+          "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.stagecameratrigger-1.0.1.zip",
+          "zipSHA256": "7db65dd7da31d76fed68df1d08930be0407665b0851499ca8135a6c7cecac66f"
         }
       }
     },
@@ -41,6 +57,22 @@
           },
           "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.particlerangetrigger-1.0.0.zip",
           "zipSHA256": "ff47e45bb31b8148c45b4dc51a0c3dc7f2b01e4c557ef512309f8572f49a0b46"
+        },
+        "1.0.1": {
+          "name": "com.menoustore.particlerangetrigger",
+          "version": "1.0.1",
+          "displayName": "[worldtools] Particle Range Trigger",
+          "description": "プレイヤーがトリガーColliderに入っている間だけ登録したParticleSystemを再生し、範囲外では停止してCPU/描画コストを省く省エネギミック(UdonSharp)",
+          "unity": "2022.3",
+          "author": {
+            "name": "menou-store",
+            "url": "https://github.com/menou2846"
+          },
+          "vpmDependencies": {
+            "com.vrchat.worlds": ">=3.5.0"
+          },
+          "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.particlerangetrigger-1.0.1.zip",
+          "zipSHA256": "371b9fc609f005fc97440ff06fe8d3088c74bc44ea5212d497d7f753301a0500"
         }
       }
     },
@@ -58,6 +90,22 @@
           },
           "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.mantislodbatch-1.0.0.zip",
           "zipSHA256": "7402bcc84fb5cfc02836f43bfa04f949ca88fb7b4c96e1d45f76fe6990715401"
+        },
+        "1.1.0": {
+          "name": "com.menoustore.mantislodbatch",
+          "version": "1.1.0",
+          "displayName": "[worldtools] Mantis LOD Batch Generator (要認証)",
+          "description": "選択したオブジェクト群に対してMantis LOD EditorのAPIを使いLOD1/LOD2メッシュとLODGroupを一括自動生成するエディタ拡張。要Mantis LOD Editor(別途購入・Assets配下にインポート済みであること)。",
+          "unity": "2022.3",
+          "author": {
+            "name": "menou-store",
+            "url": "https://github.com/menou2846"
+          },
+          "vpmDependencies": {
+            "com.menoustore.license": "1.0.0"
+          },
+          "url": "https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/Releases/com.menoustore.mantislodbatch-1.1.0.zip",
+          "zipSHA256": "adb7d46235e19e03c578dccf340a92a5f620a4a0d2388db4d8d2f5e9a4fa72f1"
         }
       }
     }
