@@ -3,9 +3,11 @@ using System.Linq;
 using MantisLODEditor;
 using UnityEditor;
 using UnityEngine;
+using MenouStore.License;
 
 public class MantisLODBatchGenerator : EditorWindow
 {
+    private const string ProductId = "default";
     private const string OutputFolder = "Assets/GeneratedLODs";
 
     private float lod1Quality = 50f;
@@ -19,11 +21,28 @@ public class MantisLODBatchGenerator : EditorWindow
     [MenuItem("Tools/軽量化検証/Mantis LODを一括生成")]
     private static void Open()
     {
+        if (!LicenseAuth.IsAuthenticated(ProductId))
+        {
+            LicenseAuth.OpenAuthWindow(ProductId);
+            return;
+        }
+
         GetWindow<MantisLODBatchGenerator>("Mantis LOD 一括生成");
     }
 
     private void OnGUI()
     {
+        if (!LicenseAuth.IsAuthenticated(ProductId))
+        {
+            EditorGUILayout.HelpBox("認証が必要です。一度ウィンドウを閉じてメニューから開き直してください。", MessageType.Warning);
+            if (GUILayout.Button("認証する"))
+            {
+                LicenseAuth.OpenAuthWindow(ProductId);
+                Close();
+            }
+            return;
+        }
+
         EditorGUILayout.LabelField(
             "選択中のオブジェクト(MeshRendererが無ければ子階層を自動探索)に\nMantis LODでLOD1/LOD2メッシュを生成し、LODGroupを設定します。",
             EditorStyles.wordWrappedLabel);

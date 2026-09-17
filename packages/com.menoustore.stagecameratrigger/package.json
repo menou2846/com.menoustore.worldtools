@@ -1,7 +1,7 @@
 {
   "name": "com.menoustore.stagecameratrigger",
-  "version": "1.0.0",
-  "displayName": "[menotool] Stage Camera Trigger (Private)",
+  "version": "1.0.1",
+  "displayName": "[worldtools] Stage Camera Trigger",
   "description": "プレイヤーがトリガーColliderに入っている間だけ舞台カメラを有効化し、RenderTexture描画コストを省く省エネ監視カメラギミック(UdonSharp)",
   "unity": "2022.3",
   "author": {

@@ -1,16 +1,24 @@
-# menotool World Tools (Private)
+# worldtools (Public)
 
-menou-store が使用しているVRChat**ワールド**制作用のツール・ギミック集です(`com.vrchat.avatars`向けの `com.menoustore.tools` とはSDKが異なるため別リポジトリ)。Privateリポジトリのため、ここからインストールできるのは許可された本人・関係者のみです。
+menou-store が公開しているVRChat**ワールド**制作用のツール・ギミック集です(`com.vrchat.avatars`向けの `com.menoustore.tools`/`com.menoustore.menotool` とはSDKが異なるため別リポジトリ)。GitHubアカウント不要で誰でもインストールできます。
 
 ## 含まれるパッケージ
 
-| パッケージID | 内容 |
-|---|---|
-| `com.menoustore.stagecameratrigger` | プレイヤーがトリガーColliderに入っている間だけ舞台カメラを有効化する省エネ監視カメラギミック(UdonSharp) |
-| `com.menoustore.particlerangetrigger` | プレイヤーがトリガーColliderに入っている間だけParticleSystemを再生する省エネギミック(UdonSharp) |
-| `com.menoustore.mantislodbatch` | Mantis LOD EditorのAPIを使いLOD1/LOD2メッシュとLODGroupを一括自動生成するエディタ拡張(要Mantis LOD Editor別途購入) |
+**インストールできること**と**実際に機能が使えること**は別です。🔒が付いているパッケージは、VCCでインストールしても、Fanboxで配布されるパスワードで認証するまではツールの本体機能が動きません。
+
+| | パッケージID | 内容 |
+|---|---|---|
+| 🔓 無料 | `com.menoustore.stagecameratrigger` | プレイヤーがトリガーColliderに入っている間だけ舞台カメラを有効化する省エネ監視カメラギミック(UdonSharp) |
+| 🔓 無料 | `com.menoustore.particlerangetrigger` | プレイヤーがトリガーColliderに入っている間だけParticleSystemを再生する省エネギミック(UdonSharp) |
+| 🔒 **Fanbox限定(要パスワード認証)** | `com.menoustore.mantislodbatch` | Mantis LOD EditorのAPIを使いLOD1/LOD2メッシュとLODGroupを一括自動生成するエディタ拡張(要Mantis LOD Editor別途購入) |
 
 必要なものだけ個別にインストールできます。
+
+> 🔒が付いているFanbox限定ツールを使うには、パスワード認証用に以下の`com.menoustore.license`リポジトリ**も**VCCに追加してください(このリポジトリ単体はインストールしても何も機能しません。上記🔒ツールの依存パッケージとして自動で入ります):
+> ```
+> https://raw.githubusercontent.com/menou2846/com.menoustore.license/main/index.json
+> ```
+> パスワードは[Fanbox](https://kannazukimenou.fanbox.cc/)の支援者限定記事で配布しています。
 
 ## 依存関係
 
@@ -19,22 +27,16 @@ menou-store が使用しているVRChat**ワールド**制作用のツール・�
 
 ## VCC(VRChat Creator Companion)での導入方法
 
-このリポジトリはPrivateのため、認証ヘッダー(Personal Access Token)の設定が必要です。classic tokenを使用してください(`repo`スコープ)。
+GitHubアカウント不要で追加できます。
 
-1. GitHubで classic personal access token を発行
-   - https://github.com/settings/tokens/new
-   - Scopes: `repo` にチェック
-2. VCC(ALCOM等) → `Settings` → `Packages` タブ → `Add Repository`
-3. URL欄に以下を入力(`api.github.com` の Contents API エンドポイント):
+1. VCCを開く → `Settings` → `Packages` タブ → `Add Repository`
+2. 以下のURLを入力して追加:
 
 ```
-https://api.github.com/repos/menou2846/com.menoustore.worldtools/contents/index.json
+https://raw.githubusercontent.com/menou2846/com.menoustore.worldtools/master/index.json
 ```
 
-4. ヘッダーを2つ追加:
-   - `Authorization` = `token <発行したPAT>`
-   - `Accept` = `application/vnd.github.raw+json`
-5. 追加後、対象プロジェクトの `Manage Project` 画面に上記パッケージが個別に表示されるので、必要なものだけInstall
+3. 対象プロジェクトの `Manage Project` 画面に上記パッケージが個別に表示されるので、必要なものだけInstall
 
 ## 開発者向け: 新バージョンの出し方
 

@@ -1,7 +1,9 @@
-# Mantis LOD Batch Generator (Private)
+# Mantis LOD Batch Generator (Fanbox限定・要パスワード認証)
 
 選択したオブジェクト群に対して、[Mantis LOD Editor](http://www.mesh-online.net/mantis.html) のAPIを直接呼び出し、
 LOD1/LOD2メッシュの生成とLODGroupのセットアップを一括自動化するUnityエディタ拡張です。
+
+初回利用時にパスワード認証が必要です。パスワードは[Fanbox](https://kannazukimenou.fanbox.cc/)の支援者限定記事で配布しています。
 
 VRChatワールド制作でのポリゴン数最適化を想定していますが、VRChat SDKへの依存はなく、
 Unity汎用のLODGroupコンポーネントのみを使用します。
