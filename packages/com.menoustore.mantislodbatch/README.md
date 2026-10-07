@@ -16,7 +16,7 @@ Unity汎用のLODGroupコンポーネントのみを使用します。
 
 ## 使い方
 
-1. Unityメニューの `Tools > 軽量化検証 > Mantis LODを一括生成` を開く
+1. Unityメニューの `Meno Tools > Mantis LOD一括生成` を開く
 2. Hierarchyで対象オブジェクトを選択
    - MeshRendererを持つオブジェクトを直接選択、または
    - 親オブジェクトを選択(子階層のMeshRendererを自動探索して全て処理)

@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.3.1] - 2026-10-07
+
+- `com.menoustore.mantislodbatch`(v1.1.1)のメニューを`Tools/軽量化検証/Mantis LODを一括生成`から`Meno Tools/Mantis LOD一括生成`に変更(README追従)
+
 ## [1.3.0] - 2026-09-17
 
 - リポジトリをPrivateからPublicへ変更(GitHubアカウント不要でインストール可能に)

@@ -68,7 +68,7 @@ git push origin v1.0.1
 
 **要件: Mantis LOD Editor(有償, Unity Asset Store)を別途購入し、対象プロジェクトの `Assets` 配下にインポートしておくこと。**このパッケージにはMantis LOD Editor本体は含まれません。
 
-1. Unityメニューの `Tools > 軽量化検証 > Mantis LODを一括生成` を開く
+1. Unityメニューの `Meno Tools > Mantis LOD一括生成` を開く
 2. Hierarchyで対象オブジェクトを選択(MeshRendererが無ければ子階層を自動探索)
 3. LOD1/LOD2の品質(%)と切替しきい値を設定し、「選択中のオブジェクトに生成」をクリック
 4. `Assets/GeneratedLODs/` に簡略化メッシュが生成され、対象オブジェクトに標準の `LODGroup` が設定される

@@ -18,7 +18,7 @@ public class MantisLODBatchGenerator : EditorWindow
     private bool protectBoundary = true;
     private bool protectShape = true;
 
-    [MenuItem("Tools/軽量化検証/Mantis LODを一括生成")]
+    [MenuItem("Meno Tools/Mantis LOD一括生成")]
     private static void Open()
     {
         if (!LicenseAuth.IsAuthenticated(ProductId))
